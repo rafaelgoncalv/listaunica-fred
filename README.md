@@ -1,10 +1,20 @@
-# listaunica-fred
+#  Lista única do professsor Fred
 
-Olá, senhores(as)!
+## Variáveis e expressões
 
-Saudações!
+## Variáveis e expressões
 
-Eu estou resolvendo uma lista de 100 exercícios aos poucos e até o presente momento resolvi apenas as questões de 1 até 59 resolvidas, exceto:
+## Comandos condicionais
+
+## Comandos de repetição
+
+## Vetores
+
+## Matrizes
+
+## String
+
+## Questões não resolvidas ainda
 
 34
 36
