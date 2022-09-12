@@ -2,8 +2,6 @@
 
 ## Variáveis e expressões
 
-## Variáveis e expressões
-
 ## Comandos condicionais
 
 ## Comandos de repetição
