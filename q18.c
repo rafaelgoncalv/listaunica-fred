@@ -21,7 +21,7 @@ int main() // Função obrigatória
 
 	/* Declaração de constantes ou variáveis */ //
 
-    int n1,n2;
+    int n1, n2, aux;
 	
 	/* Fim */
 
@@ -35,21 +35,27 @@ int main() // Função obrigatória
 
 	// Solicita que o usuário que entre com algum dado qualquer
 
+    printf("\nAntes da permutação:");
+    printf("\nn1 = %d e n2 = %d", n1, n2);
+
+    aux = n1;//Guardando a cópia do valor de n1
+    n1 = n2;
+    n2 = aux;
+
 	/* Fim */ 
 
 	/* Saida de dados */
 
-    printf("n1 = %d e n2 = %d",n1,n2);
     printf("\nApós a permutação ficará da seguinte forma:");
-    printf("\nn1 = %d e n2 = %d",n2,n1);
+    printf("\nn1 = %d e n2 = %d", n1, n2);
 
 	
 	// Exibe mensagem na tela
 
 	/* Fim */ 
 
-	   system("PAUSE"); // Pausa o programa assim como o comando "getchar();"
-	   return 0; 
+	//system("PAUSE"); // Pausa o programa assim como o comando "getchar();". Apenas no Windows.
+	return 0; 
 
 
-   } // Fim
+} // Fim

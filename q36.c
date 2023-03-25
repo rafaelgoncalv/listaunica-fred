@@ -67,7 +67,7 @@ int main() // Função obrigatória
 
         }else{
 
-            if(exam1>=70 && exam2>=70 && exam3<70 && exam4>=70 && exam5<70){
+            if(exam1>=70 && exam2>=70 && (exam3<70 || exam5<70) && exam4>=70){
 
                 printf("A média das notas é %.2f",media);
                 printf("B – passou em I, II e IV, mas não em III ou V");
@@ -88,7 +88,7 @@ int main() // Função obrigatória
 
         if(media<70){
 
-            if(exam1>=70 && exam2>=70 && exam3<70 && exam4>=70 && exam5<70){
+            if(exam1==70 && exam2==70 && (exam3<70 || exam5<70) && exam4==70){
 
 
                 printf("A média das notas é %.2f",media);
@@ -96,7 +96,7 @@ int main() // Função obrigatória
 
             }else{
 
-                if(exam1>=70 && exam2>=70 && (exam3>=70 || exam4>=70) && exam5<70){
+                if(exam1==70 && exam2==70 && exam3==70 && exam4==70 && exam5<70){
 
                     printf("A média das notas é %.2f",media);
                     printf("C – passou em I e II, III ou IV, mas não em V"); 

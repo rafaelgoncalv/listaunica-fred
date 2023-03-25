@@ -1,6 +1,7 @@
 #include <stdio.h> // Funções de entrada e saída
 #include <stdlib.h> // Função padrão
 #include <locale.h> // Habilita o uso de acentuação em palavras
+//#include <math.h> // Funções matemáticas
 
 // Adicionar novas bibliotecas acima de acordo com necessidade 
 
@@ -20,15 +21,11 @@ que ela facilita a confecção e o consequente pagamento dos boletos das duas pr
 */ 
 
 
-int main() // Função obrigatória
-
-   { /* Início */
-
-	// Atenção! O nome da variável, somente pode conter letras, números e o caracter _ (undescore)
+int main(){// Função obrigatória
 
 	/* Declaração de constantes ou variáveis */ //
 
- float num,presta1,presta2,entrada;
+ 	float num, presta1, presta2, entrada;
 	
 	/* Fim */
 
@@ -36,7 +33,7 @@ int main() // Função obrigatória
 	
 	setlocale(LC_ALL,"");
     printf("Digite o valor da mercadoria:");
-    scanf("%f",&num);
+    scanf("%f", &num);
 
 	// Solicita que o usuário que entre com algum dado qualquer
 
@@ -46,21 +43,36 @@ int main() // Função obrigatória
 
     //302,75
 
-    presta1 = num/3; //100
-    presta2 = presta1;
-    entrada = num - (presta1 + presta2);//2,75
+    presta1 = num/3; //100,9166666666667
+	presta1 = presta1 - (presta1 - (int)(presta1));//Eliminando a parte fracionária
+    presta2 = presta1;//100
+    entrada = num - (presta1 + presta2);//102.75
+
+	/*
+
+	floor(numero) = parte inteira
+	numero - floor(numero) = parte decimal
+
+	Usando a biblioteca math. h:
+
+    presta1 = num/3; //100,9166666666667
+	presta1 = presta1 - (presta1 - floor(presta1));//Eliminando a parte fracionária
+    presta2 = presta1;//100
+    entrada = num - (presta1 + presta2);//102.75
+
+	*/
 
 	/* Saida de dados */
 
     printf("O valor da entrada é R$%.2f",entrada);
-    printf("\nO valor das duas parcelas é R$%f",presta1);
+    printf("\nO valor das duas parcelas é R$%.2f",presta1);
 	
 	// Exibe mensagem na tela
 
 	/* Fim */ 
 
-	   system("PAUSE"); // Pausa o programa assim como o comando "getchar();"
-	   return 0; 
+	//system("PAUSE"); // Pausa o programa assim como o comando "getchar();"
+	return 0; 
 
 
    } // Fim
