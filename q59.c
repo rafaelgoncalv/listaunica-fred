@@ -37,7 +37,7 @@ int main() // Função obrigatória
 	/* Entrada de dados */
 	
 	setlocale(LC_ALL,"");
-    printf("Digite o número de termos:"); //Para 3 termos, O valor e é igual 1,667
+    printf("Digite o número de termos:"); //Para 3 termos, O valor e é igual 2,667
     scanf("%d",&num);
 
 	// Solicita que o usuário que entre com algum dado qualquer
@@ -51,7 +51,7 @@ int main() // Função obrigatória
 			fatorial = fatorial*j;
 		}
 
-		soma = soma + 1/fatorial;
+		soma = soma + 1.0/fatorial;
 	}
 
 
