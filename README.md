@@ -4,7 +4,8 @@
 
 [Questão 1](https://github.com/rafaelgoncalv/listaunica-fred/blob/main/q1.c)
 
-[Questão 2] (https://github.com/rafaelgoncalv/listaunica-fred/blob/main/q2.c)
+[Questão 2](https://github.com/rafaelgoncalv/listaunica-fred/blob/main/q2.c)
+
 
 ## Comandos condicionais
 
