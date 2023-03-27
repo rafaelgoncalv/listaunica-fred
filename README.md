@@ -2,6 +2,7 @@
 
 ## Variáveis e expressões
 
+[Questão 1](https://github.com/rafaelgoncalv/listaunica-fred/blob/main/q1.c)
 ## Comandos condicionais
 
 ## Comandos de repetição
